@@ -18,6 +18,7 @@
     }
 </script>
 <style lang="less">
+
 @import "../assets/less/var.less";
 .m-tabbar-item{
     flex: 1;

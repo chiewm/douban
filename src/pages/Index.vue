@@ -1,14 +1,11 @@
 <template>
   <div>
-<<<<<<< HEAD
     <m-header title="豆瓣app" fixed>
       <a href="javascript:;" slot="left"><img class="m-icon-img" src="../assets/images/ic_bar_back_green.png"/>返回</a>
       <a href="javascript:;" slot="right"><img class="m-icon-img margin-right-10" src="../assets/images/ic_actionbar_search_icon.png"/></a>
       <a href="javascript:;" slot="right"><img class="m-icon-img" src="../assets/images/ic_chat_green.png"/></a>
     </m-header>
-=======
-    测试
->>>>>>> 5d6d0c01b10ad6e0a1988874411e52f5c2462b6f
+
     <m-tabbar v-model="select">
       <m-tabbar-item id='tab1'>
         <img src="../assets/images/ic_tab_home_normal.png" alt="" slot="icon-normal"> 
@@ -42,20 +39,14 @@
 <script>
 import mTabbar from "../components/tabbar";
 import mTabbarItem from "../components/tabbar-item";
-<<<<<<< HEAD
 import mHeader from "../components/header"
-=======
->>>>>>> 5d6d0c01b10ad6e0a1988874411e52f5c2462b6f
+
 export default {
   name: "index",
   components: {
     mTabbar,
-<<<<<<< HEAD
     mTabbarItem,
     mHeader
-=======
-    mTabbarItem
->>>>>>> 5d6d0c01b10ad6e0a1988874411e52f5c2462b6f
   },
   data() {
     return {
