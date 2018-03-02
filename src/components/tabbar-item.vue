@@ -38,11 +38,7 @@
     }
     &.is-active{
         .m-tabbar-item-text{
-<<<<<<< HEAD
             color: @tabbarActiveColor;
-=======
-            color: #42bd56;
->>>>>>> 5d6d0c01b10ad6e0a1988874411e52f5c2462b6f
         }
     }
 }
