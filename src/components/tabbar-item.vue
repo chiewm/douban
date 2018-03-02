@@ -18,10 +18,7 @@
     }
 </script>
 <style lang="less">
-<<<<<<< HEAD
 @import "../assets/less/var.less";
-=======
->>>>>>> 5d6d0c01b10ad6e0a1988874411e52f5c2462b6f
 .m-tabbar-item{
     flex: 1;
     text-align: center;
