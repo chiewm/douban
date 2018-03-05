@@ -8,12 +8,12 @@
 </template>
 
 <script>
-import mHeader from "../../components/header";
+import mHeader from '../../components/header'
 
 export default {
-  name: "mine",
+  name: 'mine',
   components: {
     mHeader
   }
-};
+}
 </script>

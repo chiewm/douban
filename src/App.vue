@@ -32,20 +32,20 @@
 </template>
 
 <script>
-import mTabbar from "./components/tabbar";
-import mTabbarItem from "./components/tabbar-item";
+import mTabbar from './components/tabbar'
+import mTabbarItem from './components/tabbar-item'
 export default {
-  name: "app",
+  name: 'app',
   components: {
     mTabbar,
     mTabbarItem
   },
   data() {
     return {
-      select: "Index"
-    };
+      select: 'Index'
+    }
   }
-};
+}
 </script>
 
 <style>

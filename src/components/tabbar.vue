@@ -4,15 +4,15 @@
     </div>
 </template>
 <script>
-import mTabbarItem from "./tabbar-item";
+
 export default {
-  props: ["value"],
+  props: ['value'],
   computed: {
     values() {
-      return this.$route.matched[0].name;
+      return this.$route.matched[0].name
     }
   }
-};
+}
 </script>
 <style lang="less">
 .m-tabbar {

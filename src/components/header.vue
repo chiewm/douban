@@ -16,7 +16,7 @@ export default {
   props: {
     title: {
       type: String,
-      default: ""
+      default: ''
     },
     bg: {
       type: Boolean,
@@ -27,7 +27,7 @@ export default {
       default: false
     }
   }
-};
+}
 </script>
 
 <style lang="less">

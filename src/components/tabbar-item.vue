@@ -19,21 +19,21 @@ export default {
   computed: {
     isActive() {
       if (this.$parent.value === this.id) {
-        return true;
+        return true
       }
     }
   },
   methods: {
     goToRouter() {
-      this.$parent.$emit("input", this.id);
+      this.$parent.$emit('input', this.id)
       //判断是否为路由跳转
       if (this.isRouter) {
         //根据id跳转到对应的路由页面
-        this.$router.push(this.id);
+        this.$router.push(this.id)
       }
     }
   }
-};
+}
 </script>
 <style lang="less">
 @import "../assets/less/var.less";
