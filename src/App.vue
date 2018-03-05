@@ -34,6 +34,7 @@
 <script>
 import mTabbar from './components/tabbar'
 import mTabbarItem from './components/tabbar-item'
+
 export default {
   name: 'app',
   components: {
