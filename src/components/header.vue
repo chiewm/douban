@@ -50,9 +50,9 @@ export default {
     &.is-left {
       text-align: left;
     }
-    &.is-right {
-      text-align: right;
-    }
+    // &.is-right {
+    //   text-align: right;
+    // }
     .m-icon-img {
       width: 20px;
       height: 20px;
