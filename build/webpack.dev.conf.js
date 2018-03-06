@@ -111,18 +111,5 @@ module.exports = new Promise((resolve, reject) => {
     }
   })
 })
-<<<<<<< HEAD
-=======
 
-const express = require('express')
-var app = express()
-var homeData=require('../src/data/homeData.json');
-var apiRoutes = express.Router();
-apiRoutes.get('/homeData',function (req,res) {
-  res.json({
-    errno:0,
-    data:homeData
-  });
-});
-app.use('/api',apiRoutes);
->>>>>>> d1923a2aaf197c8bf1735d45c365155323daa682
+
