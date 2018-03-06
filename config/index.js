@@ -3,7 +3,9 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-
+axios.defaults.headers = {
+  "Content-Type": "application/x-www-form-urlencoded"
+}
 module.exports = {
   dev: {
 
@@ -11,7 +13,17 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+<<<<<<< HEAD
       
+=======
+      '/api': {
+        target: 'https://api.douban.com/v2',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/api': ''
+        },
+      }
+>>>>>>> d1923a2aaf197c8bf1735d45c365155323daa682
     },
 
     // Various Dev Server settings
