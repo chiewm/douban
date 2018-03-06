@@ -3,7 +3,9 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-
+axios.defaults.headers = {
+  "Content-Type": "application/x-www-form-urlencoded"
+}
 module.exports = {
   dev: {
 
@@ -16,7 +18,7 @@ module.exports = {
         changeOrigin: true,
         pathRewrite: {
           '^/api': ''
-        }
+        },
       }
     },
 
@@ -28,7 +30,7 @@ module.exports = {
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
 
-    
+
     /**
      * Source Maps
      */

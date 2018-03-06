@@ -94,14 +94,14 @@ module.exports = new Promise((resolve, reject) => {
   })
 })
 
-
+const express = require('express')
 var app = express()
-var homeData=require('../src/data/homeData.json')
-var apiRoutes = express.Router()
+var homeData=require('../src/data/homeData.json');
+var apiRoutes = express.Router();
 apiRoutes.get('/homeData',function (req,res) {
   res.json({
     errno:0,
     data:homeData
-  })
-})
-app.use('/api',apiRoutes)
+  });
+});
+app.use('/api',apiRoutes);

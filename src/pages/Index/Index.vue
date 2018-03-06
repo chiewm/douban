@@ -14,7 +14,7 @@
           <img src="../../assets/images/ic_arrow_gray_small.png" alt="">
         </a>
       </m-cell>
-      <m-cell-media :author="item.target.author.name" :column="item.source_cn" :img="item.target.cover_url" v-for="(item,index) in hotData"
+      <m-cell-media :author="item.target.author.name" :column="item.source_cn" :img="item.target.cover_url" v-for="(item) in hotData"
         :key="item.id">
 
         <span slot="title">{{item.title}}</span>
@@ -69,7 +69,6 @@ export default {
 
       })
     }
-
   }
 }
 
