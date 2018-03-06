@@ -13,9 +13,6 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-<<<<<<< HEAD
-      
-=======
       '/api': {
         target: 'https://api.douban.com/v2',
         changeOrigin: true,
@@ -23,7 +20,7 @@ module.exports = {
           '^/api': ''
         },
       }
->>>>>>> d1923a2aaf197c8bf1735d45c365155323daa682
+
     },
 
     // Various Dev Server settings
