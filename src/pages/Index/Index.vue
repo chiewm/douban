@@ -14,12 +14,12 @@
           <img src="../../assets/images/ic_arrow_gray_small.png" alt="">
         </a>
       </m-cell>
-      <m-cell-media :author="item.target.author.name" :column="item.source_cn" :img="item.target.cover_url" v-for="(item,index) in hotData"
+      <m-media-cell :author="item.target.author.name" :column="item.source_cn" :img="item.target.cover_url" v-for="(item) in hotData"
         :key="item.id">
 
         <span slot="title">{{item.title}}</span>
         <span slot="describe">{{item.target.desc}}</span>
-      </m-cell-media>
+      </m-media-cell>
 
     </div>
   </div>
@@ -52,7 +52,7 @@ export default {
   },
   methods: {
     fetchData() {
-      this.axios.get('/api/homeData').then((response) => {
+      this.axios.get('/api').then((response) => {
         let data = response.data.data.recommend_feeds
         let recommend = []
         let hot = []
@@ -66,10 +66,9 @@ export default {
 
         this.recommendData = recommend
         this.hotData = hot
-
+  
       })
     }
-
   }
 }
 
