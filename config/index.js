@@ -3,9 +3,7 @@
 // see http://vuejs-templates.github.io/webpack for documentation.
 
 const path = require('path')
-axios.defaults.headers = {
-  "Content-Type": "application/x-www-form-urlencoded"
-}
+
 module.exports = {
   dev: {
 
